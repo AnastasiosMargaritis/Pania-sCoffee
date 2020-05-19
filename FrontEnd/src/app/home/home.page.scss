@@ -1,0 +1,88 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+
+}
+
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+
+  
+}
+
+#container a {
+  text-decoration: none;
+}
+
+ion-content.myhome{
+  --background: url("../../assets/images/backround.jpg");
+}
+
+ion-title{
+  font-family: 'Bilbo', cursive;
+  font-size: 35px;
+}
+
+.glow{
+  font-size: 60px;
+  font-family: 'Bilbo', cursive;
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+ion-footer{
+  ion-toolbar{
+  --background-color: transparent !important;
+  --ion-color-base: transparent !important;
+  }
+  div{
+    font-size: 30px;
+    font-family: 'Bilbo', cursive;
+    color: #fff;
+  }
+
+  ion-buttons{
+    text-align: center;
+    margin: 15px;
+    margin-bottom: -15px;
+  }
+
+  ion-button{
+    margin: 20px;
+    margin-top: -13px;
+    font-size: 15px;
+    text-align: center;
+    padding: 0;
+  }
+}

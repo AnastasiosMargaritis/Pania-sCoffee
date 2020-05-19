@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar color="dark">
+
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  
+    <ion-title>Panian's Coffee</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="myhome" padding fullscreen>
+
+<ion-text>
+  <h1 class="glow">Feel the Taste!</h1>
+</ion-text>
+
+
+  <ion-card>
+    <ion-slides pager #mySlider class="slides" (ionSlidesDidLoad)="slidesDidLoad(mySlider)">
+      <ion-slide>
+        <img src="https://techcrunch.com/wp-content/uploads/2020/01/twitch-2019.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="https://scontent.fath6-1.fna.fbcdn.net/v/t1.15752-9/97998623_2912098985504641_8879238594011594752_n.jpg?_nc_cat=108&_nc_sid=b96e70&_nc_oc=AQluXp-XmjEcdVpsYThy2Xg1IqCFnlVfCFbCbNxCUBfvYOyibRRvNDVLuH6YDMQJNdc&_nc_ht=scontent.fath6-1.fna&oh=02ad896310fd987893444e9502714668&oe=5EE7A57E">
+      </ion-slide>
+      <ion-slide>
+        <img src="https://golden-diamond-escort.com/wp-content/uploads/2017/01/BYZIA-CALL-GIRL-3.jpg">
+      </ion-slide>
+    </ion-slides>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <div class="ion-text-center">Find us on:</div>
+  <ion-toolbar color="dark">
+  <ion-grid>
+    <ion-row no-padding no-margin>
+      <ion-buttons class="bg-transparent">
+        <ion-col col-3 no-padding>
+          <ion-button>
+          <ion-icon src="assets/svg/logo-facebook.svg"></ion-icon>
+        </ion-button>
+        </ion-col>
+        <ion-col col-3 no-padding>
+          <ion-button>
+          <ion-icon src="assets/svg/logo-instagram.svg"></ion-icon>
+        </ion-button>
+        </ion-col>
+        <ion-col col-3 no-padding>
+          <ion-button>
+          <ion-icon src="assets/svg/logo-twitch.svg"></ion-icon>
+        </ion-button>
+        </ion-col>
+        <ion-col col-3 no-padding>
+          <ion-button>
+          <ion-icon src="assets/svg/logo-youtube.svg"></ion-icon>
+        </ion-button>
+        </ion-col>
+      </ion-buttons>  
+    </ion-row>
+  </ion-grid>
+  </ion-toolbar>
+</ion-footer>
+
