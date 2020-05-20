@@ -2,34 +2,48 @@
   <ion-menu side="start">
     <ion-header>
       <ion-toolbar>
-        <ion-title>
+        <ion-title class="ion-text-center">
           Panian's Coffee
         </ion-title>
       </ion-toolbar>
     </ion-header>
 
     <ion-content>
+      <ion-card>
+        <img src="https://scontent.fath6-1.fna.fbcdn.net/v/t1.15752-9/97998623_2912098985504641_8879238594011594752_n.jpg?_nc_cat=108&_nc_sid=b96e70&_nc_oc=AQluXp-XmjEcdVpsYThy2Xg1IqCFnlVfCFbCbNxCUBfvYOyibRRvNDVLuH6YDMQJNdc&_nc_ht=scontent.fath6-1.fna&oh=02ad896310fd987893444e9502714668&oe=5EE7A57E">
+      </ion-card>
+
       <ion-list>
-        <ion-item lines="none">
-          <ion-icon name="cafe-outline" slot="start"></ion-icon>
-          <ion-label>Hot Coffee</ion-label>
-        </ion-item>
-        <ion-item lines="none">
-          <ion-icon name="cafe-outline" slot="start"></ion-icon>
-          <ion-label>Cold Coffee</ion-label>
-        </ion-item>
-        <ion-item lines="none">
-          <ion-icon name="beer-outline" slot="start"></ion-icon>
-          <ion-label>Drinks</ion-label>
-        </ion-item>
-        <ion-item lines="none">
-          <ion-icon name="fast-food-outline" slot="start"></ion-icon>
-          <ion-label>Snacks</ion-label>
-        </ion-item>
-        <ion-item lines="none">
-          <ion-icon name="exit" slot="start"></ion-icon>
-          <ion-label>Logout</ion-label>
-        </ion-item>  
+        <ion-menu-toggle>
+          <ion-item routerLink="/menu/hot-coffee" button>
+            <ion-icon name="cafe-outline" slot="start" large></ion-icon>
+            <ion-label class="menu-item">Hot Coffee</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="/menu/cold-coffee" button>
+            <ion-icon name="cafe-outline" slot="start" large></ion-icon>
+            <ion-label class="menu-item">Cold Coffee</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="/menu/drinks" button>
+            <ion-icon name="beer-outline" slot="start" large></ion-icon>
+            <ion-label class="menu-item">Drinks</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="/menu/snacks" button>
+            <ion-icon name="fast-food-outline" slot="start" large></ion-icon>
+            <ion-label class="menu-item">Snacks</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item (click)="onLogout()" button>
+            <ion-icon name="exit" slot="start" large></ion-icon>
+            <ion-label class="menu-item">Logout</ion-label>
+          </ion-item> 
+        </ion-menu-toggle> 
       </ion-list>
     </ion-content>
   </ion-menu>

@@ -61,28 +61,33 @@ ion-title{
   }
 }
 
-ion-footer{
-  ion-toolbar{
-  --background-color: transparent !important;
-  --ion-color-base: transparent !important;
-  }
+ion-row.socialmedia{
   div{
     font-size: 30px;
     font-family: 'Bilbo', cursive;
     color: #fff;
   }
-
   ion-buttons{
     text-align: center;
     margin: 15px;
-    margin-bottom: -15px;
   }
-
   ion-button{
     margin: 20px;
     margin-top: -13px;
     font-size: 15px;
     text-align: center;
     padding: 0;
+    color: #fff;
   }
 }
+
+ion-tab-button.orders-button {
+  --color-selected: orange;
+}
+
+ion-tab-bar, ion-tab-button{
+  background-color: #A9A9A9;
+  opacity: 1;
+ }
+
+ 
