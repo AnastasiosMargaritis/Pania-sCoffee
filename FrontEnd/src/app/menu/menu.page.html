@@ -1,9 +1,18 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>menu</ion-title>
+    <ion-buttons slot="start" routerLink="/home" large>  
+      <ion-icon src="assets/icon/home.svg" ></ion-icon>
+    </ion-buttons>
+    <ion-title text-center>Κατάλογος</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-list>
+    <ion-card *ngFor= "let o of options; let i = index" class="catalogue">
+      <ion-card-header class="ion-text-center">
+        <ion-card-title>{{ o }}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  </ion-list>
 </ion-content>

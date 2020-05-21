@@ -9,6 +9,8 @@ export class MenuPage implements OnInit {
 
   constructor() { }
 
+  options = ["hot", "cold", "drinks", "snacks"];
+
   ngOnInit() {
   }
 

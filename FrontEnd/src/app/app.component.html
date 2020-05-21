@@ -16,31 +16,31 @@
       <ion-list>
         <ion-menu-toggle>
           <ion-item routerLink="/menu/hot-coffee" button>
-            <ion-icon name="cafe-outline" slot="start" large></ion-icon>
+            <ion-icon src="assets/icon/hot_coffee.svg" slot="start" large></ion-icon>
             <ion-label class="menu-item">Hot Coffee</ion-label>
           </ion-item>
         </ion-menu-toggle>
         <ion-menu-toggle>
           <ion-item routerLink="/menu/cold-coffee" button>
-            <ion-icon name="cafe-outline" slot="start" large></ion-icon>
+            <ion-icon src="assets/icon/cold_coffee.svg" slot="start" large></ion-icon>
             <ion-label class="menu-item">Cold Coffee</ion-label>
           </ion-item>
         </ion-menu-toggle>
         <ion-menu-toggle>
           <ion-item routerLink="/menu/drinks" button>
-            <ion-icon name="beer-outline" slot="start" large></ion-icon>
+            <ion-icon src="assets/icon/drinks.svg" slot="start" large></ion-icon>
             <ion-label class="menu-item">Drinks</ion-label>
           </ion-item>
         </ion-menu-toggle>
         <ion-menu-toggle>
           <ion-item routerLink="/menu/snacks" button>
-            <ion-icon name="fast-food-outline" slot="start" large></ion-icon>
+            <ion-icon src="assets/icon/snacks.svg" slot="start" large></ion-icon>
             <ion-label class="menu-item">Snacks</ion-label>
           </ion-item>
         </ion-menu-toggle>
         <ion-menu-toggle>
           <ion-item (click)="onLogout()" button>
-            <ion-icon name="exit" slot="start" large></ion-icon>
+            <ion-icon src="assets/icon/logout.svg" slot="start" large></ion-icon>
             <ion-label class="menu-item">Logout</ion-label>
           </ion-item> 
         </ion-menu-toggle> 
@@ -48,5 +48,4 @@
     </ion-content>
   </ion-menu>
   <ion-router-outlet main></ion-router-outlet>
-
 </ion-app>

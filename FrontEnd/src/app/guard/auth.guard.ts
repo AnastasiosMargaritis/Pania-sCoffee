@@ -18,11 +18,12 @@ export class AuthGuard implements CanLoad {
   ):Observable<boolean> | Promise<boolean> | boolean
   {
 
-    if(!this.authService._userIsAuthenticated){
-      this.router.navigateByUrl('/auth');
-    }
+    // if(!this.authService._userIsAuthenticated){
+    //   this.router.navigateByUrl('/auth');
+    // }
 
-    return this.authService._userIsAuthenticated;
+    // return this.authService._userIsAuthenticated;
+    return true;
   }
   
 }
