@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar class="black-bg">
     <ion-buttons slot="start" routerLink="/home" large>  
       <ion-icon src="assets/icon/home.svg" ></ion-icon>
     </ion-buttons>
@@ -8,10 +8,46 @@
 </ion-header>
 
 <ion-content>
+  <ion-row>
+    <ion-col size-md="6" offset-md="3" class="ion-text-center">
+      <ion-text>
+        <h1 class="glow">Menu!</h1>
+      </ion-text>
+    </ion-col>
+</ion-row>
   <ion-list>
-    <ion-card *ngFor= "let o of options; let i = index" class="catalogue">
+    <ion-card class="catalogue">
       <ion-card-header class="ion-text-center">
-        <ion-card-title>{{ o }}</ion-card-title>
+        <ion-card-title>
+          <button routerLink="/menu/hot-coffee">
+            <ion-icon src="assets/icon/hot_coffee.svg"></ion-icon>
+            <ion-label>Ζεστά Ροφήματα</ion-label>
+          </button>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-header class="ion-text-center">
+        <ion-card-title>
+          <button routerLink="/menu/cold-coffee">
+            <ion-icon src="assets/icon/cold_coffee.svg"></ion-icon>
+            <ion-label>Κρύα Ροφήματα</ion-label>
+          </button>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-header class="ion-text-center">
+        <ion-card-title>
+          <button routerLink="/menu/drinks">
+            <ion-icon src="assets/icon/drinks.svg"></ion-icon>
+            <ion-label>Ποτά</ion-label>
+          </button>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-header class="ion-text-center">
+        <ion-card-title>
+          <button routerLink="/menu/snacks">
+            <ion-icon src="assets/icon/snacks.svg"></ion-icon>
+            <ion-label>Σνακ</ion-label>
+          </button>
+        </ion-card-title>
       </ion-card-header>
     </ion-card>
   </ion-list>

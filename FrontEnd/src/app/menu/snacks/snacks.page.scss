@@ -1,0 +1,16 @@
+ion-content{
+    --background: url("../../../assets/images/backround.jpg");
+}
+
+ion-toolbar.black-bg{
+    --background: black;
+  
+    ion-title{
+      color: white;
+    }
+  }
+
+  ion-icon{
+    color: white;
+    font-size: larger;
+  }
