@@ -8,15 +8,14 @@
 </ion-header>
  
 <ion-content>
-
+  
   <ion-fab vertical="top" horizontal="end" slot="fixed">
     <ion-fab-button (click)="openCart()" #cart>
       <div class="cart-length">{{ cartItemCount | async }}</div>
       <ion-icon src="assets/icon/cart.svg"></ion-icon>
     </ion-fab-button>
   </ion-fab>
-
-
+  
   <ion-card *ngFor = "let p of products">
     <ion-card-header>
       <ion-card-title> {{ p.name }}</ion-card-title>
